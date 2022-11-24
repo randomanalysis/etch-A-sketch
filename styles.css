@@ -1,0 +1,14 @@
+.Grid-Container {
+    display: grid;
+    --cols: 1;
+    grid-template-columns: repeat(var(--cols), 1fr);
+    grid-template-rows: repeat(var(--cols), 1fr);
+    width: 700px;
+    height: 700px;
+    margin: 15px;
+
+}
+
+.Grid-Cell {
+    border: 1px solid lightgray;
+}
