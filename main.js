@@ -24,6 +24,9 @@ function createDivs(sideLength) {
                 this.style.backgroundColor = 'black';
             }
         })
+        cell.addEventListener("click", function () {
+            this.style.backgroundColor = 'black';
+        })
         container.appendChild(cell);
     }
 }
@@ -41,5 +44,9 @@ colourChoice.addEventListener("input", () => {
             }
             
         })
+        cell.addEventListener("click", function () {
+            this.style.backgroundColor = colourChoice.value;
+        })
     });
 });
+
