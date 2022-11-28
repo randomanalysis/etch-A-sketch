@@ -1,7 +1,7 @@
 const container = document.querySelector('.Grid-Container');
 const gridCells = document.querySelectorAll('.Grid-Cell');
-const gridButton = document.querySelector('#submit-gridsize');
 const gridsize = document.querySelector('#gridsize');
+const gridlabel = document.querySelector('#gridLabel');
 const colourChoice = document.querySelector('#colourWell');
 
 let mouseDown = false
@@ -31,9 +31,15 @@ function createDivs(sideLength) {
     }
 }
 
-gridButton.addEventListener('click', () => {
+gridsize.addEventListener('change', () => {
     createDivs(gridsize.value);
+    updateSizeValue(gridsize.value)
+    
 });
+
+function updateSizeValue(sideLength) {
+    gridlabel.innerHTML = "Grid size: " + sideLength.toString() + "x" + sideLength.toString();
+  }
 
 colourChoice.addEventListener("input", () => {
     const gridCells = document.querySelectorAll('.Grid-Cell');

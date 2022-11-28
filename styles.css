@@ -1,3 +1,30 @@
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: aquamarine;
+}
+
+.Header {
+    padding-left: 35px;
+    background-color: aquamarine;
+}
+
+.Header2 {
+    padding-left: 35px;
+    background-color: aquamarine;
+}
+
+.Header h1 {
+
+}
+
+.Control {
+    padding-left: 35px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    background-color: lightseagreen;
+}
+
 .Grid-Container {
     display: grid;
     --cols: 1;
@@ -7,9 +34,11 @@
     height: 700px;
     margin: 15px;
     border: 1px solid gray;
-
+    background-color: white;
 }
+
+
 
 .Grid-Cell {
     border: 1px solid lightgray;
-}
+}    
